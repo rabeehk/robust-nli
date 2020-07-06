@@ -43,22 +43,6 @@ Each dataset has three files:
 - **s2.test**   each line shows a hypothesis
 - **labels.test**   each line shows a label.
  
-### How these datasets are created.
-- We trained a fastText classifier on the hypothesis of the MNLI training set and
-choose the samples in the MNLI development set that this hypothesis-only classifier
-cannot predict correctly as hard set. Here we share the parameters of of the trained 
-FastText classifier:
-```
-- dim (size of word vectors) 10 
-- lr (learning rate) 0.1 
-- wordNgrams (max length of word ngram) 2
-- minn (min length of char ngram) 4
-- minCount (minimal number of word occurrences) 10
-- bucket (number of buckets) 10000000 
-- epoch (number of epochs) 5 
-- thread (number of threads) 4
-```
-
 
 ## Bibliography
 If you find this repo useful, please cite our paper.
