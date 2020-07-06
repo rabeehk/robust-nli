@@ -1,0 +1,28 @@
+# BERT Baseline
+This folder contains the codes to reproduce the results of the 
+BERT baseline. We implemented our models on top of the BERT 
+baseline in [HuggingFace repo](https://github.com/huggingface/transformers)
+
+# Reproducing the results 
+We provide the scripts to reproduce the results in **scripts** folder.
+
+- To train all models on the FEVER dataset:
+```
+bash train_fever.sh
+```
+- To train all models on the SNLI dataset:
+```
+bash train_snli.sh
+```
+- To train all models on the MNLI datasets (matched/mismatched):
+```
+bash train_mnli.sh
+```
+- To train all models on the HANS dataset:
+```
+bash train_hans.sh
+```
+- To train the ensemble models for HANS and MNLI hard sets: 
+```
+bash train_hans_ensemble.sh
+```

@@ -1,0 +1,15 @@
+# InferSent baseline
+In this folder, we provide the codes used to produce the InferSent
+baseline's results.
+
+# Experiments
+The codes used to generate the results on SNLI dataset is provided in:
+```
+bash scripts/train_snli.sh
+```
+
+The codes used to generate the results on MNLI datasets is provided in:
+```
+bash scripts/train_mnli.sh
+```
+
